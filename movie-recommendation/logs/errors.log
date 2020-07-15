@@ -1,0 +1,27 @@
+2020-07-14 16:36:21,047 - kedro.pipeline.node - ERROR - Node `ratings_table: create_ratings_table([ratings]) -> [ratings_table]` failed with error: 
+'list' object has no attribute 'add'
+2020-07-14 19:55:42,979 - kedro.pipeline.node - ERROR - Node `create_viewed_table: create_viewed_table([ratings_table]) -> [viewed_table]` failed with error: 
+cannot convert the series to <class 'float'>
+2020-07-14 20:31:01,452 - kedro.pipeline.node - ERROR - Node `split_data([parameters,ratings_table,viewed_table]) -> [evaluation_table,test_table,train_table]` failed with error: 
+split_data() missing 2 required positional arguments: 'validation_size' and 'random_state'
+2020-07-14 20:39:45,407 - kedro.pipeline.node - ERROR - Node `split_data([parameters,ratings_table,viewed_table]) -> [evaluation_table,test_table,train_table]` failed with error: 
+randint() got an unexpected keyword argument 'size'
+2020-07-14 20:41:02,878 - kedro.pipeline.node - ERROR - Node `split_data([parameters,ratings_table,viewed_table]) -> [evaluation_table,test_table,train_table]` failed with error: 
+__init__() got an unexpected keyword argument 'size'
+2020-07-14 20:44:45,372 - kedro.pipeline.node - ERROR - Node `split_data([parameters,ratings_table,viewed_table]) -> [evaluation_table,test_table,train_table]` failed with error: 
+DataFrame constructor not properly called!
+2020-07-14 21:52:35,439 - kedro.pipeline.node - ERROR - Node `split_data([parameters,ratings_table,viewed_table]) -> [evaluation_table,test_table,train_table]` failed with error: 
+DataFrame constructor not properly called!
+2020-07-14 21:58:18,278 - kedro.pipeline.node - ERROR - Node `split_data([parameters,ratings_table,viewed_table]) -> [evaluation_table,test_table,train_table]` failed with error: 
+'Index' object is not callable
+2020-07-14 22:00:48,607 - kedro.pipeline.node - ERROR - Node `split_data([parameters,ratings_table,viewed_table]) -> [evaluation_table,test_table,train_table]` failed with error: 
+Shape of passed values is (252343802, 1), indices imply (252343802, 458)
+2020-07-14 22:08:25,162 - kedro.pipeline.node - ERROR - Node `split_data([parameters,ratings_table,viewed_table]) -> [evaluation_table,test_table,train_table]` failed with error: 
+The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2020-07-14 22:31:14,234 - kedro.pipeline.node - ERROR - Node `split_data([parameters,ratings_table,viewed_table]) -> [evaluation_table,test_table,train_table]` failed with error: 
+The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2020-07-14 22:33:58,192 - kedro.pipeline.node - ERROR - Node `split_data([parameters,ratings_table,viewed_table]) -> [evaluation_table,test_table,train_table]` failed with error: 
+The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2020-07-14 22:45:23,337 - kedro.pipeline.node - ERROR - Node `train_model([train_table,viewed_table]) -> [prediction_table]` failed with error: 
+Failed to save outputs of node train_model([train_table,viewed_table]) -> [prediction_table].
+The node definition contains a list of outputs ['prediction_table'], whereas the node function returned a `DataFrame`.

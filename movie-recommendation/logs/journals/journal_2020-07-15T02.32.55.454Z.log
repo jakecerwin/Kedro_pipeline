@@ -1,0 +1,1 @@
+{"type": "ContextJournalRecord", "run_id": "2020-07-15T02.32.55.454Z", "project_path": "/Users/jakecerwin/Desktop/17445/i5/movie-recommendation", "env": "local", "kedro_version": "0.16.3", "tags": [], "from_nodes": [], "to_nodes": [], "node_names": [], "from_inputs": [], "load_versions": {}, "pipeline_name": "ds", "extra_params": {}, "git_sha": null}
